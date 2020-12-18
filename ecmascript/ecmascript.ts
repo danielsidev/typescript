@@ -138,16 +138,16 @@ const boasVindas = `
 Boas vindas ${user},
 Notificações: ${ parseInt(notificacoes) > 9 ? '+9': notificacoes}`;
 
-console.log(boasVindas)
-console.log(`${(1+1) * 30}`)
+// console.log(boasVindas)
+// console.log(`${(1+1) * 30}`)
 
 //Callback
 
-function espera3s(callback: (dado:string) => void){
-    setTimeout(()=>{
-        callback('3s depois...')
-    },3000);
-}
+// function espera3s(callback: (dado:string) => void){
+//     setTimeout(()=>{
+//         callback('3s depois...')
+//     },3000);
+// }
 
 // espera3s((res:string)=>{
 //     console.log(res);
@@ -167,10 +167,10 @@ function espera3s(callback: (dado:string) => void){
 // .then(dado => console.log(dado));
 
 
-fetch('https://swapi.dev/api/people/1/')
-    .then(res => res.json())
-    .then(personagem => personagem.films)
-    .then(films => fetch(films[0]))
-    .then(resFilm=> resFilm.json())
-    .then(filme => console.log(filme.title))
-    .catch(err => console.log(`Catch!!!:: ${JSON.stringify(err)} `))
+// fetch('https://swapi.dev/api/people/1/')
+//     .then(res => res.json())
+//     .then(personagem => personagem.films)
+//     .then(films => fetch(films[0]))
+//     .then(resFilm=> resFilm.json())
+//     .then(filme => console.log(filme.title))
+//     .catch(err => console.log(`Catch!!!:: ${JSON.stringify(err)} `))
